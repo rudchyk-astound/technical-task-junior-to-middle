@@ -1,12 +1,34 @@
 # Technical task for promotion from Frontend Developer Junior to Frontend Developer Middle
 
+## Task
+
 - [ ] Create a page layout according to the design
-- [ ] Build a grid of 8 products according to the design
-- [ ] An image and a name have to be wrapped with a link to a product
-- [ ] Implement add to cart functionality on keypress/click of the button "Add to Cart":
-* [ ] The text has to be changed to "Added to Cart"
-* [ ] Bg color has to be changed to "#0579bb"
-* [ ] Quantity of the "Added products" has to be increased to 1
+  - [ ] The layout should be RWD
+  - [ ] The footer should be always on the bottom of the page
+  - [ ] The "Technical task" is a logo and should be a link with href "/"
+  - [ ] The "GitHub" is a item of the navigation and should be a link with href "#"
+- [ ] Create a login form according to the design
+  - [ ] The email field should accept only emails
+  - [ ] The password field should mask an entered value
+  - [ ] The "Remember Me" should be a native checkbox
+  - [ ] The "Forgot Password?" should be a link with href "#"
+  - [ ] The reset button should reset all the fields
+  - [ ] The submit button should hide all content of the form and show `Hello ${entered email}`
+
+TIP:
+> YOU CAN USE GOOGLE!!! or any other:)
+
+***
+## Additional task
+
+- [ ] Send the request to `/api/login` and show `Hello ${response}` according to response
+
+TIP:
+* You can use any library for requests, for example:
+  * [Fetch](https://javascript.info/fetch)
+  * [axios](https://github.com/axios/axios)
+  * [jQuery.ajax()](https://api.jquery.com/jquery.ajax/)
+* A library can be set in any way (CDN, NPM, download & put)
 
 ## Installation
 
@@ -21,22 +43,13 @@ webpack -h -w serve
 
 ## Designs:
 
-### PGP Desktop:
+### Desktop:
 
-![PGP Desktop](/desings/pgp.jpg "PGP Desktop")
+![Desktop](/desings/login.jpg "Desktop")
 
-### PGP mobile:
+### Mobile:
 
-![PGP mobile](/desings/mobile.jpg "PGP mobile")
+![Mobile](/desings/login-mobile.jpg "Mobile")
 
-## Images:
-* http://img.bbystatic.com/BestBuy_US/images/products/4390/43900_sa.jpg
-* http://img.bbystatic.com/BestBuy_US/images/products/4853/48530_sa.jpg
-* http://img.bbystatic.com/BestBuy_US/images/products/1276/127687_sa.jpg
-* http://img.bbystatic.com/BestBuy_US/images/products/1501/150115_sa.jpg
-* http://img.bbystatic.com/BestBuy_US/images/products/1852/185230_sa.jpg
-* http://img.bbystatic.com/BestBuy_US/images/products/1852/185267_sa.jpg
-* http://img.bbystatic.com/BestBuy_US/images/products/3122/312290_sa.jpg
-* http://img.bbystatic.com/BestBuy_US/images/products/3331/333179_sa.jpg
-
-
+### Submitted Form
+![Submitted Form](/desings/logined.jpg "Submitted Form")

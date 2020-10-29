@@ -11,7 +11,12 @@ module.exports = {
     compress: true,
     contentBase: path.join(__dirname, 'dist'),
     publicPath: '/',
-    port: 9000
+    port: 9000,
+    before: function(app, server, compiler) {
+      app.get('/api/login', function(req, res) {
+        res.json(res);
+      });
+    }
   },
   module: {
     rules: [
