@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const bodyParser = require('body-parser');
 
 module.exports = {
   entry: './src/js/index.js',
@@ -12,9 +13,12 @@ module.exports = {
     contentBase: path.join(__dirname, 'dist'),
     publicPath: '/',
     port: 9000,
-    before: function(app, server, compiler) {
-      app.get('/api/login', function(req, res) {
-        res.json(res);
+    setup(app) {
+      app.use(bodyParser.json());
+    },
+    before(app, server, compiler) {
+      app.post('/api/login', function(req, res) {
+        res.send(req.body)
       });
     }
   },
